@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FLATICON ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Ecommerce Website</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__container container">
+          <div class="header__contact">
+            <span>(+91) - 1234567890</span>
+          </div>
+          <p class="header__alert-news">
+            Super Values Deals - Save more coupons
+          </p>
+          <a href="login-register.html" class="header__top-action">
+            Log In / Sign Up
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <img
+            class="nav__logo-img"
+            src="assets/img/logo1.jpg" height="90px"
+            alt="website logo"
+          />
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__menu-top">
+            <a href="index.html" class="nav__menu-logo">
+              <img src="./assets/img/logo.svg" alt="">
+            </a>
+            <div class="nav__close" id="nav-close">
+              <i class="fi fi-rs-cross-small"></i>
+            </div>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="shop.html" class="nav__link">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="accounts.html" class="nav__link">My Account</a>
+            </li>
+            <li class="nav__item">
+              <a href="login-register.html" class="nav__link">Login</a>
+            </li>
+          </ul>
+          <div class="header__search">
+            <input
+              type="text"
+              placeholder="Search For Items..."
+              class="form__input"
+            />
+            <button class="search__btn">
+              <img src="assets/img/search.png" alt="search icon" />
+            </button>
+          </div>
+        </div>
+        <div class="header__user-actions">
+          <a href="wishlist.html" class="header__action-btn" title="Wishlist">
+            <img src="assets/img/icon-heart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <a href="cart.html" class="header__action-btn" title="Cart">
+            <img src="assets/img/icon-cart.svg" alt="" />
+            <span class="count">3</span>
+          </a>
+          <div class="header__action-btn nav__toggle" id="nav-toggle">
+            <img src="./assets//img/menu-burger.svg" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+      <!--=============== HOME ===============-->
+      <section class="home section--lg">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__subtitle">Hot Promotions</span>
+            <h1 class="home__title">
+              Fashion Trending <span>Great Collection</span>
+            </h1>
+            <p class="home__description">
+              Save more with coupons & up tp 40% off
+            </p>
+            <a href="shop.html" class="btn">Shop Now</a>
+          </div>
+          <img src="assets/img/home3.png" class="home__img" alt="hats" height="500px" width="750px" />
+        </div>
+      </section>
+
+      <!--=============== PRODUCTS ===============-->
+      <section class="products container section">
+        <div class="tab__btns">
+          <span class="tab__btn active-tab" data-target="#featured"
+            >Products</span
+          >
+
+        <div class="tab__items">
+          <div class="tab__item active-tab" content id="featured">
+            <div class="products__container grid">
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/product-1.webp" height="300px" 
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/product-1.webp" height="300px"
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-pink">Hot</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Green Cotton Shirt</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹799</span>
+                    <span class="old__price">₹999</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                  <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/product-2.jpg" height="300px" width="350px"
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/product-2.jpg" height="300px" width="350px"
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-green">Hot</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Printed Summer Shirt</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹699</span>
+                    <span class="old__price">₹899</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/product-3.jpg" height="300px" width="300px"
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/product-3.jpg" height="300px" width="300px"
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-orange">Hot</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Black Denim Jacket</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹1,299</span>
+                    <span class="old__price">₹1,499</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/product-4.webp" height="300px" width="300px"
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/product-4.webp" height="300px" width="300px"
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-blue">Hot</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Black Hoodie</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹1,099</span>
+                    <span class="old__price">₹1,299</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/product-5.jpeg"
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/product-5.jpeg"
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-blue">-25%</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Printed Anime T-Shirt</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹599</span>
+                    <span class="old__price">₹799</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/product-6.webp" height="300px" width="700px"
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/product-6.webp" height="300px" width="700px"
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-blue">-22%</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Nike Shoe</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹6,999</span>
+                    <span class="old__price">₹8,999</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/product-7.webp" height="300px" width="700px" 
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/product-7.webp" height="300px" width="700px"
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-green">-20%</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Grey Jeans Pant</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹1,199</span>
+                    <span class="old__price">₹1,499</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/product-8.jpg" height="290px"
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/product-8.jpg" 
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-green">-20%</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Short Sleeve Shirt</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹799</span>
+                    <span class="old__price">₹999</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/category-6.webp" 
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/category-6.webp" 
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-green">-25%</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Black Jeans Pant</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹1,199</span>
+                    <span class="old__price">₹1,499</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/new-4.webp"
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/new-4.webp" 
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-green">-20%</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Hip Hop Cap</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹499</span>
+                    <span class="old__price">₹749</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/new-3.jpg" 
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/new-3.jpg" 
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  <div class="product__badge light-green">-25%</div>
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Sport Shoe</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹2,599</span>
+                    <span class="old__price">₹3,199</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="product__item">
+                <div class="product__banner">
+                  <a href="details.html" class="product__images">
+                    <img
+                      src="assets/img/new-1.webp" height="284px"
+                      alt=""
+                      class="product__img default"
+                    />
+                    <img
+                      src="assets/img/new-1.webp" 
+                      alt=""
+                      class="product__img hover"
+                    />
+                  </a>
+                  
+                </div>
+                <div class="product__content">
+                  <span class="product__category">Clothing</span>
+                  <a href="details.html">
+                    <h3 class="product__title">Winter Jacket</h3>
+                  </a>
+                  <div class="product__rating">
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                    <i class="fi fi-rs-star"></i>
+                  </div>
+                  <div class="product__price flex">
+                    <span class="new__price">₹5,999</span>
+                    <span class="old__price">₹7,999</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="action__btn cart__btn"
+                    aria-label="Add To Cart"
+                  >
+                    <i class="fi fi-rs-shopping-bag-add"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--=============== SHOWCASE ===============-->
+      <section class="showcase section">
+        <div class="showcase__container container grid">
+          <div class="showcase__wrapper">
+            <h3 class="section__title">Hot Releases</h3>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-9.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">
+                    Two Color Casual Shirt
+                  </h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹1,099</span>
+                  <span class="old__price">₹1,299</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-6.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">
+                    Multi-Color Short Sleeve Shirt
+                  </h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹799</span>
+                  <span class="old__price">₹1,099</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-7.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">
+                    Shoes For Men
+                  </h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹1,299</span>
+                  <span class="old__price">₹1,599</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase__wrapper">
+            <h3 class="section__title">Deals & Offers</h3>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-4.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">Designing Hat For Women</h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹349</span>
+                  <span class="old__price">₹499</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-5.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">Multi-Color Short Sleeve Shirt</h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹799</span>
+                  <span class="old__price">₹999</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-6.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">
+                    Multi-Color Short Sleeve Shirt
+                  </h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹799</span>
+                  <span class="old__price">₹999</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase__wrapper">
+            <h3 class="section__title">Top Selling</h3> 
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/product-3-2.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">
+                    Shoes For Men
+                  </h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹1,299</span>
+                  <span class="old__price">₹1,599</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-6.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">Multi-Color Short Sleeve Shirt</h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹799</span>
+                  <span class="old__price">₹999</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-9.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">
+                    Two Color Casual Shirt
+                  </h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹1,099</span>
+                  <span class="old__price">₹1,299</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="showcase__wrapper">
+            <h3 class="section__title">Trending</h3>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-5.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">Multi-Color Short Sleeve Shirt</h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹799</span>
+                  <span class="old__price">₹999</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-7.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">Shoes For Men</h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹1,299</span>
+                  <span class="old__price">₹1,599</span>
+                </div>
+              </div>
+            </div>
+            <div class="showcase__item">
+              <a href="details.html" class="showcase__img-box">
+                <img
+                  src="./assets/img/showcase-img-9.jpg"
+                  alt=""
+                  class="showcase__img"
+                />
+              </a>
+              <div class="showcase__content">
+                <a href="details.html">
+                  <h4 class="showcase__title">Two Color Casual Shirt</h4>
+                </a>
+                <div class="showcase__price flex">
+                  <span class="new__price">₹1,099</span>
+                  <span class="old__price">₹1,299</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=============== SIGNIN ===============-->
+      <section class="newsletter section home__newsletter">
+        <div class="newsletter__container container grid">
+          <h3 class="newsletter__title flex">
+            <img
+            src="./assets/img/premium.png" height="50px" width="40px"
+            />
+            Sign in For Premium
+          </h3>
+          <p class="newsletter__description">
+            ...and receive ₹500 coupon for first shopping.
+          </p>
+          <form action="" class="newsletter__form">
+            <input
+              type="text"
+              placeholder="Enter Your Email"
+              class="newsletter__input"
+            />
+            <button type="submit" class="newsletter__btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="assets/img/logo.jpg" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Contact</h4>
+          <p class="footer__description">
+            <span>Address:</span> Sai Nagar, P.K.V Colony, Amravati 
+          </p>
+          <p class="footer__description">
+            <span>Phone:</span>(+91) 12345 67890
+          </p>
+          <p class="footer__description">
+            <span>Hours:</span> 10:00 - 10:00, Mon - Sat
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Follow Me</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img
+                  src="./assets/img/icon-facebook.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-twitter.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-instagram.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-pinterest.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="./assets/img/icon-youtube.svg"
+                  alt=""
+                  class="footer__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">About Us</a></li>
+            <li><a href="#" class="footer__link">Delivery Information</a></li>
+            <li><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link">Terms & Conditions</a></li>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+            <li><a href="#" class="footer__link">Support Center</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">My Account</h3>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Sign In</a></li>
+            <li><a href="#" class="footer__link">View Cart</a></li>
+            <li><a href="#" class="footer__link">My Wishlist</a></li>
+            <li><a href="#" class="footer__link">Track My Order</a></li>
+            <li><a href="#" class="footer__link">Help</a></li>
+            <li><a href="#" class="footer__link">Order</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Secured Payed Gateways</h3>
+          <img
+            src="assets/img/payment-method1.jpg"
+            alt=""
+            class="payment__img"
+          />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="copyright">&copy; 2024 ShopCart. All right reserved</p>
+      </div>
+    </footer>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
